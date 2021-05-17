@@ -1,0 +1,23 @@
+.S-C-section {
+    height: 40vh;
+    width:  40wh;
+    margin: 20px auto 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.S-C-Wrapper-2 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.S-C-section {
+    display: flex;
+}
+button
+{
+    margin-left: 10px;
+    
+    border-radius: 10px;
+}
