@@ -38,7 +38,7 @@ function Character() {
                 {
                     (Whole_character && Whole_character.length) ? Whole_character.map((url, i) => (
                         <div className="charactercard1" key={i}>
-                            <CharacterCard url={url} />
+                            <CharacterCard url={url}/>
                             {flag = true}
                         </div>
                     )) : 
