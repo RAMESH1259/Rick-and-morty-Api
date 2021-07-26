@@ -21,7 +21,6 @@ function Character() {
             dispatch(Get_All_character(value))
         }
     }
-
     return (
         <div className='Wrapper1'>
             <div className="Select">
@@ -38,15 +37,15 @@ function Character() {
                 {
                     (Whole_character && Whole_character.length) ? Whole_character.map((url, i) => (
                         <div className="charactercard1" key={i}>
-                            <CharacterCard url={url}/>
+                            <CharacterCard url={url} />
                             {flag = true}
                         </div>
-                    )) : 
-                    <div className="front-message"> 
-                        <h2>Rick and Morty</h2>
-                        {/* <img src={rick} alt="rick and morty"/> */}
-                        <p className="no-character">{flag?"No character Found": "Please select a location"}</p>
-                    </div>
+                    )) :
+                        <div className="front-message">
+                            <h2>Rick and Morty</h2>
+                            {/* <img src={rick} alt="rick and morty"/> */}
+                            <p className="no-character">{flag ? "No character Found" : "Please select a location"}</p>
+                        </div>
                 }
             </div>
         </div>
