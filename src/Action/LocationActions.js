@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const GetLoction=()=>async (dispatch)=>
 {
-    const data1 = await axios.get('https://rickandmortyapi.com/api/location');
+    const data1 = await axios.get('https://rickandmortyapi.com/api/location/?page=1');
     const data2 = await axios.get('https://rickandmortyapi.com/api/location/?page=2');
     const data3 = await axios.get('https://rickandmortyapi.com/api/location/?page=3');
     const data4 = await axios.get('https://rickandmortyapi.com/api/location/?page=4');
