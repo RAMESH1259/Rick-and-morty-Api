@@ -19,40 +19,39 @@ function SingleCharacter() {
 
     return (
         <div className="S-C-section">
-        <div className="S-C-Wrapper2">
-            {   carddetails && (
-                <div className="S-C-section">
-                    <div className="image">
-                        <img className="image_1" src={carddetails.image} alt="alt-img" />
+            <div className="S-C-Wrapper2">
+                {carddetails && (
+                    <div className="S-C-section">
+                        <div className="image">
+                            <img className="image_1" src={carddetails.image} alt="alt-img" />
+                        </div>
+                        <div className="contentsection">
+                            <div className="label1">
+                                <label>Name:</label>
+                                <p>{carddetails.name}</p>
+                            </div>
+                            <div className="label1">
+                                <label>Status:</label>
+                                <p className={`status-${carddetails.status === "Alive" ? 'alive' : carddetails.status === "Dead" ? 'dead' : "unknown"}`} >{carddetails.status}</p>
+                            </div>
+                            <div className="label1">
+                                <label>Species</label>
+                                <p>{carddetails.species}</p>
+                            </div>
+                            <div className="label1">
+                                <label>Gender:</label>
+                                <p>{carddetails.gender}</p>
+                            </div>
+                            <div className="label1">
+                                <label>Id:</label>
+                                <p>{carddetails.id}</p>
+                            </div>
+                            <Link to='/'><button>Go To home page</button></Link>
+                        </div>
                     </div>
-                    <div className="contentsection">
-                        <div className="label1">
-                            <label>Name:</label>
-                            <p>{carddetails.name}</p>
-                        </div>
-                        <div className="label1">
-                            <label>Status:</label>
-                            <p className={`status-${carddetails.status === "Alive" ? 'alive' : carddetails.status === "Dead" ? 'dead' : "unknown"}`} >{carddetails.status}</p>
-                        </div>
-                        <div className="label1">
-                            <label>Species</label>
-                            <p>{carddetails.species}</p>
-                        </div>
-                        <div className="label1">
-                            <label>Gender:</label>
-                            <p>{carddetails.gender}</p>
-                        </div>
-                        <div className="label1">
-                            <label>Id:</label>
-                            <p>{carddetails.id}</p>
-                        </div>
-                        <Link to='/'><button>Go To home page</button></Link> 
-                    </div>
-                </div>
-            )
-            }
-
-        </div>
+                )
+                }
+            </div>
         </div>
     )
 }
