@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation } from "react-router";
 import { Link } from "react-router-dom";
-import { GetCharacterDetails } from "../Action/SingleDataAction";
-import "./SingleCharacter.css";
+import { GetCharacterDetails } from "../Redux/Action/SingleDataAction";
+import "../theme/SingleCharacter.css";
 
 function SingleCharacter() {
   const dispatch = useDispatch();

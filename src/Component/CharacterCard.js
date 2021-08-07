@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router';
-import { Get_character } from '../Action/CharacterAction';
-import "./CharacterCard.css"
+import { Get_character } from '../Redux/Action/CharacterAction';
+import "../theme/CharacterCard.css"
 
 const CharacterCard = (props) => {
     const [data, setData] = useState({});
